@@ -31,9 +31,9 @@ export class LoginComponent implements OnInit {
     console.log(this.pwd)
   }
 
-  login() {
-    var acno = this.accno
-    var pwd = this.pwd
+  login(acccno:any,pswd:any) {
+    var acno = acccno.value
+    var pwd = pswd.value
     let accDetails = this.users
     if (acno in accDetails) {
       if (pwd == accDetails[acno]["password"]) {
@@ -46,6 +46,7 @@ export class LoginComponent implements OnInit {
     else {
       alert("invalid credentials")
     }
+
 
   }
 }
