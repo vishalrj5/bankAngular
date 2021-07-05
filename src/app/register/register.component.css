@@ -6,9 +6,11 @@
 }
 
 body,head{
-    background: rgb(253, 235, 176);
-background: linear-gradient(90deg, rgba(190,244,255,1) 17%, rgba(14,105,134,1) 41%, rgba(12,89,119,1) 59%, rgba(10,74,105,1) 73%, rgba(2,0,36,1) 100%); 
-
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,105,134,1) 20%, rgb(193, 245, 255) 88%);
+    
+    
+    
 }
 input{
     background-color: transparent;
@@ -30,7 +32,7 @@ input{
     
 }
 .items{
-    color: rgb(0, 0, 0);
+    
     padding: 10px;
     width: 300px;
     text-align: center;
@@ -67,12 +69,12 @@ input{
     font-size: 120%;
 }
 h2{
-    color: rgb(0, 0, 172);
+    color: rgb(5, 5, 107);
     font-size: 230%;
     font-weight: 800;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-bottom: 2%;
-    text-shadow: 2px 2px #3d3c3c;
+    
 }
 /* img{
     transition: 1s;;
@@ -95,7 +97,7 @@ img:hover{
 h1{
     /* background-image: url(./shutterstock.jpg);
      */
-    margin-top: 60%;
+    margin-top: 30%;
     padding: 30%;
     position: relative;
     text-align: left;
@@ -105,7 +107,6 @@ h1{
     text-shadow: 2px 4px #000000;
     font-weight: 800;
     transition: 1s;
-    
 }
 h1:hover{
     transition-delay: 70ms;
@@ -123,18 +124,10 @@ p:hover{
     font-size:150%;
     transition-delay: 10ms;
 }
-
-#Aim{
-    color: rgb(74, 160, 160);
-}
-
-a{
-    color: aliceblue; 
-    text-decoration: none;
-    transition: 1s;   
-}
-a:hover{
-    transition-delay: 70ms;
-    color:rgb(4, 255, 150);
-    
+span{
+    font-size: 60%;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(182, 205, 255);
+    font-weight: 100;
 }
