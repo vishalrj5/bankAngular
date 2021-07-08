@@ -1,21 +1,27 @@
 <head></head>
-<body>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-sm-12 first"></div>
-        <div class="col-lg-4 col-sm-12 main">
-            <h2 id="Aim">{{Aim}}</h2>
-            <h2>Sign In</h2>
-            <input type="text" class="items" id="accno"[(ngModel)]="accno"   placeholder="Account Number"><br>
-            
-            <input type="password" class="items" id="pswd" [(ngModel)]="psswd"  placeholder="PASSWORD"><br>
-            
-            <button class="item" (click)="login()">Log In</button>
-            <br>
-            <a routerLink="register">New to Bank ? Register here</a>
 
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 first"></div>
+            <div class="col-lg-4 col-sm-12 main">
+                <h2 id="Aim">{{Aim}}</h2>
+                <h2>Sign In</h2>
+                <form action="" (ngSubmit)="login()">
+                    <input type="text" class="items" name="accno" id="accno" [(ngModel)]="accno" placeholder="Account Number"><br>
+
+                    <input type="password" class="items" name="pwd" id="pswd" [(ngModel)]="psswd" placeholder="PASSWORD"><br>
+
+                    <button class="item" >Log In</button>
+                    <br>
+                    <a routerLink="register">New to Bank ? Register here</a>
+                </form>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <h1><br>
+                    <p>Luminar Bank</p>
+                </h1>
+            </div>
         </div>
-        <div class="col-lg-4 col-sm-12"><h1><br><p>Luminar Bank</p></h1></div>
     </div>
-</div>
 </body>

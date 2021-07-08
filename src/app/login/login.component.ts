@@ -63,25 +63,21 @@ export class LoginComponent implements OnInit {
 
 
   // }
-  login() {
-    var acno = this.accno
-    var pwd = this.psswd
-    let accDetails = this.ds.users
-    if (acno in accDetails) {
-      if (pwd == accDetails[acno]["password"]) {
-        alert("Login Successful");
-        this.router.navigateByUrl("dashboard")
+  login(){
+    var acno = this.accno;
+    
+    var pwd = this.psswd;
+    
 
-      }
-      else {
-        alert("password invalid")
-      }
+    var result = this.ds.login(acno,pwd)
+    if(result){
+      alert("success")
+      this.router.navigateByUrl("dashboard")
     }
-    else {
-      alert("invalid credentials")
-    }
+    
+  }
 
 
   }
 
-}
+

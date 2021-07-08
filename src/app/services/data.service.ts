@@ -31,5 +31,62 @@ export class DataService {
     }
 
   }
+  login(acno: any, pwd: any) {
+
+    let accDetails = this.users
+    if (acno in accDetails) {
+      if (pwd == accDetails[acno]["password"]) {
+        return true;
+
+      }
+      else {
+        alert("password invalid")
+        return false;
+      }
+    }
+    else {
+      alert("invalid user")
+      return false
+    }
+
+
+  }
+  deposit(acno: any, pwd: any, amt: any) {
+    var amount = parseInt(amt);
+    let accDetails = this.users;
+    if (acno in accDetails) {
+      if (pwd == accDetails[acno]["password"]) {
+        accDetails[acno]["balance"] += amount;
+        return accDetails[acno]["balance"]
+
+      }
+      else {
+        alert("password invalid")
+        return false;
+      }
+    }
+    else {
+      alert("invalid user")
+      return false
+    }
+  }
+  withdraw(acno: any, pwd: any, amt: any) {
+    var amount = parseInt(amt);
+    let accDetails = this.users;
+    if (acno in accDetails) {
+      if (pwd == accDetails[acno]["password"]) {
+        if (accDetails[acno]["balance"] < amount) { alert("Insufficient Funds") } else { accDetails[acno]["balance"] -= amount; return accDetails[acno]["balance"] }
+
+      }
+      else {
+        alert("password invalid")
+        return false;
+      }
+    }
+    else {
+      alert("invalid user")
+      return false
+    }
+  }
 
 }
