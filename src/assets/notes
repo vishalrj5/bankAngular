@@ -9,7 +9,13 @@
 
     3.1 Template driven form
 
-    
+    3.2 Reactive Forms - ReactiveFormsModule
+
+        3.2.1 Form Group - FormBuilder
+
+        3.2.2 Form Array
+
+        3.2.3 Form Control
 
 4. Data Binding
 
@@ -29,3 +35,4 @@
  6. Dependency Injection / Inversion of Control
 
  7. Service
+
